@@ -37,7 +37,8 @@ a { color: inherit; text-decoration: none; }
 
 /* Sidebar */
 .sidebar {
-  background: var(--white);
+  /*background: var(--white);*/
+  background-color: #ffffff;
   border-radius: var(--radius);
   padding: 20px;
   box-shadow: var(--shadow);
