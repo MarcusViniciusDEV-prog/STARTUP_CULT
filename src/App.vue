@@ -1,33 +1,35 @@
 <template>
-  <div>
-    <div class="app-layout">
-      <aside class="sidebar panel">
-        <div class="brand">
-          <div class="logo">CV</div>
-          <div>
-            <h1>Cultura Viva</h1>
-            <p>Turismo com alma</p>
-          </div>
+  <div class="app-layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="logo"><img src="./assets/logo.png" alt="" class="logo_cult"></div>
+        <div>
+          <h1>Cultura Viva</h1>
+          <p>Turismo</p>
         </div>
+      </div>
 
-        <nav class="nav" aria-label="main navigation">
-          <a href="#"><span class="icon-muted"></span> Início</a>
-          <a href="#"><span class="icon-muted"></span> Destinos</a>
-          <a href="#"><span class="icon-muted"></span> Pousadas</a>
-          <a href="#"><span class="icon-muted"></span> Restaurantes</a>
-          <a href="#"><span class="icon-muted"></span> Pontos</a>
-        </nav>
+      <nav class="nav">
+        <router-link to="/" class="nav-link">🏠 Início</router-link>
+        ""<router-link to="/destinos" class="nav-link">🌎 Destinos</router-link>
+        <router-link to="/pousadas" class="nav-link">🏡 Pousadas</router-link>
+        <router-link to="/restaurantes" class="nav-link">🍽️ Restaurantes</router-link>
+        <router-link to="/contato" class="nav-link">📞 Contato</router-link>
+      </nav>
 
-        <div class="profile">
-          <div class="avatar">MV</div>
-          <div>
-            <div style="font-weight:700; color:var(--moss-600)">Mariana V.</div>
-            <div style="font-size:13px; color:var(--muted)">Ver perfil</div>
-          </div>
+      <div class="profile">
+        <div class="avatar">MV</div>
+        <div>
+          <p><strong>Marcus Vinicius</strong></p>
+          <small>Admin</small>
         </div>
-      </aside>
+      </div>
+    </aside>
 
-      <main class="main">
+    <!-- Conteúdo principal -->
+    <main class="main">
+      <router-view />
         <div class="topbar">
           <div class="brand">
             <div class="logo">CV</div>
@@ -66,12 +68,13 @@
         />
 
         <div class="footer-note">© {{ new Date().getFullYear() }} Cultura Viva · Design minimalista e confiável</div>
-      </main>
-    </div>
+      
+  
+    </main>
   </div>
 </template>
 
-<script setup>
+<script>
 import { ref } from 'vue'
 import Dashboard from './Dashboard.vue'
 import SearchBar from './SearchBar.vue'
@@ -94,5 +97,5 @@ function openPlace(place){
   alert(`Abrindo: ${place.name}`)
 }
 
-  
+
 </script>

@@ -29,7 +29,6 @@
 
       <div style="margin-top:14px; display:grid; grid-template-columns:repeat(4,1fr); gap:12px;">
         <div class="topic" v-for="topic in topics" :key="topic.key" style="cursor:pointer;">
-          <div class="icon" :style="{background: topic.bg}">{{ topic.icon }}</div>
           <div style="display:flex; flex-direction:column;">
             <div style="font-weight:700; color:var(--moss-600)">{{ topic.title }}</div>
             <div style="font-size:13px; color:var(--muted)">{{ topic.subtitle }}</div>

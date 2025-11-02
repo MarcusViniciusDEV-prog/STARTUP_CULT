@@ -65,7 +65,7 @@ function open(p){
 }
 
 const topics = [
-  { key:'pousadas', title:'Pousadas', subtitle:'Acomodações com personalidade', icon:'🏨', bg:'linear-gradient(135deg,#f0f7ec,#e6f1dc)' },
+  { key:'pousadas', title:'Pousadas', subtitle:'Acomodações com personalidade', icon: '🛏️', bg:'linear-gradient(135deg,#f0f7ec,#e6f1dc)' },
   { key:'rest', title:'Restaurantes', subtitle:'Sabores locais e regionais', icon:'🍽️', bg:'linear-gradient(135deg,#fff7ec,#fff2dc)' },
   { key:'baln', title:'Balneários', subtitle:'Águas e relaxamento', icon:'🏖️', bg:'linear-gradient(135deg,#f0fff8,#e6fff0)' },
   { key:'pontos', title:'Pontos turísticos', subtitle:'Lugares históricos e naturais', icon:'📍', bg:'linear-gradient(135deg,#f7fff6,#eefaf0)' }
