@@ -15,4 +15,10 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
+  server: {
+    // host: 'culturaviva.com', // your domain from /etc/hosts or Windows hosts file
+    port: 5173,             // or any port you want (default: 5173)       // fail if port is taken instead of picking a random one
+    open: true,             // automatically open the browser
+  },
 })
+

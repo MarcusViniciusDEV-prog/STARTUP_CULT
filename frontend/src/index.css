@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
+
+
 :root{
   --moss-100: #f5f8f3;
   --moss-200: #e6efe0;
   --moss-300: #cfe3c7;
   --moss-400: #9dbf8a;
-  --moss-600: #285430; 
+  --moss-600: #285430;
   --white: #ffffff;
   --muted: #6b7280;
   --glass: rgba(255,255,255,0.7);
@@ -61,8 +63,8 @@ a { color: inherit; text-decoration: none; }
 }
 
 .logo_cult{
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 99px;
   padding: 10px 0px 10px 0px;
 }
 
@@ -96,7 +98,7 @@ a { color: inherit; text-decoration: none; }
   width:44px; height:44px; border-radius:10px; background: linear-gradient(135deg, #dfead8, var(--moss-400)); display:flex; align-items:center; justify-content:center; color:var(--moss-600); font-weight:600;
 }
 
-/* Main area */
+/* area principal */
 .main {
   display:flex; flex-direction:column; gap:18px;
 }
@@ -109,7 +111,7 @@ a { color: inherit; text-decoration: none; }
   .topbar { display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:8px; }
 }
 
-/* Panel */
+/* painel */
 .panel {
   background: var(--white);
   border-radius: 14px;
@@ -117,6 +119,7 @@ a { color: inherit; text-decoration: none; }
   box-shadow: var(--shadow);
   left: 0;
   top: 0;
+  min-width: 100vh;
 }
 
 /* Hero */
@@ -126,10 +129,10 @@ a { color: inherit; text-decoration: none; }
 .hero .title { font-size:20px; font-weight:700; color:var(--moss-600); }
 .hero .subtitle { color:var(--muted); font-size:14px; }
 
-/* SearchBar container */
+/* barra de pesquisa */
 .search-wrapper { width:100%; margin-top:6px; }
 
-/* Grid for cards */
+/* grid dso cards */
 .grid {
   display:grid;
   grid-template-columns: repeat(3,1fr);
@@ -138,7 +141,7 @@ a { color: inherit; text-decoration: none; }
 @media (max-width:1100px){ .grid { grid-template-columns: repeat(2,1fr); } }
 @media (max-width:640px){ .grid { grid-template-columns: 1fr; } }
 
-/* Card */
+/* card */
 .card {
   border-radius: 12px;
   overflow: hidden;
@@ -149,22 +152,22 @@ a { color: inherit; text-decoration: none; }
 .card .image {
   width:100%; height:160px; object-fit:cover;
 }
-.card .content { padding:12px; display:flex; flex-direction:column; gap:8px; flex:1; }
+.card .content { padding:12px; display:flex; flex-direction:column; gap:8px; flex:1;}
 .card .title { font-weight:700; color:var(--moss-600); font-size:16px; }
 .card .desc { color:var(--muted); font-size:13px; flex:1; }
 .card .meta { display:flex; justify-content:space-between; align-items:center; gap:8px; margin-top:10px; }
 
-/* Topic small cards */
+/* tópicos do card*/
 .topic {
   display:flex; gap:12px; align-items:center; padding:12px; border-radius:10px; background: linear-gradient(180deg, #fff, #fbfffa);
   box-shadow: 0 6px 14px rgba(41,71,41,0.04);
 }
 .topic .icon { width:46px; height:46px; border-radius:10px; background:var(--moss-200); display:flex; align-items:center; justify-content:center; color:var(--moss-600); }
 
-/* Footer small */
+/* rodapé */
 .footer-note { font-size:13px; color:var(--muted); padding:8px 0; text-align:center; }
 
-/* Buttons */
+/* botões*/
 .btn {
   background: var(--moss-400);
   color: white;
@@ -173,12 +176,15 @@ a { color: inherit; text-decoration: none; }
   border-radius:10px;
   font-weight:600;
   cursor:pointer;
+  margin: 10px 0px 40px 0px;
+  padding: 9px 10px 9px 10px;
 }
 .btn.ghost { background: transparent; color: var(--moss-600); border:1px solid rgba(157,191,138,0.16); }
 
 .search-input {
   width:100%; padding:12px 14px; border-radius:12px; border:1px solid rgba(15,23,42,0.06); outline:none; font-size:14px;
   box-shadow: inset 0 1px 0 rgba(255,255,255,0.6);
+  margin: 0px 0px 30px;
 }
 .search-row { display:flex; gap:12px; align-items:center; }
 .icon-muted { color:var(--moss-600); opacity:0.95; }

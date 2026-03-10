@@ -11,18 +11,18 @@
       </div>
 
       <nav class="nav">
-        <router-link to="/">🏠 Início</router-link>
-        <router-link to="/destinos">🌎 Destinos</router-link>
-        <router-link to="/pousadas">🏨 Pousadas</router-link>
-        <router-link to="/restaurantes">🍽️ Restaurantes</router-link>
-        <router-link to="/contato">✉️ Contato</router-link>
+        <router-link to="/">Início</router-link>
+        <router-link to="/destinos">Destinos</router-link>
+        <router-link to="/pousadas">Pousadas</router-link>
+        <router-link to="/restaurantes">Restaurantes</router-link>
+        <router-link to="/contato">Contato</router-link>
       </nav>
 
       <div class="profile">
         <div class="avatar">MV</div>
         <div>
           <p><strong>Marcus Vinícius</strong></p>
-          <small>Minha Conta</small>
+          <router-link to="/minhaconta"><small>Minha Conta</small> </router-link>
         </div>
       </div>
     </aside>
