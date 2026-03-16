@@ -8,18 +8,16 @@ import Contato from '@/views/Contato.vue'
 import MinhaConta from '@/views/MinhaConta.vue'
 import LoginPage from '@/views/LoginPage.vue'
 import LandingPage from '@/views/LandingPage.vue'
-import { commonjs } from 'globals'
-import { meta } from 'eslint-plugin-vue'
 
 const routes = [
-  { path: '/', name: 'landingpage', component: LandingPage },
+  { path: '/', name: 'login', component: LoginPage },
   { path: '/dashboard', name: 'dashboard', component: Dashboard },
   { path: '/destinos', name: 'destinos', component: Destinos },
   { path: '/pousadas', name: 'pousadas', component: Pousadas },
   { path: '/restaurantes', name: 'restaurantes', component: Restaurantes },
   { path: '/contato', name: 'contato', component: Contato },
   { path: '/minhaconta', name: 'minhaconta', component: MinhaConta },
-  { path: '/loginpage', name: 'login', component: LoginPage },
+  
 ]
 
 const router = createRouter({

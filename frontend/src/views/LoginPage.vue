@@ -172,13 +172,14 @@ function handleLogin() {
 
 .btn-submit {
   width: 100%;
-  background-color: var(--primary-green);
+  background-color: rgb(16, 187, 39);
   color: white;
   padding: 14px;
   border-radius: 8px;
   font-weight: 600;
   font-size: 1rem;
   margin-bottom: 15px;
+  border: none;
 }
 
 .btn-google {
@@ -208,7 +209,7 @@ function handleLogin() {
 
 .image-side {
   flex: 1;
-  background-image: url('https://images.unsplash.com/photo-1596324263720-3306ce68b446?auto=format&fit=crop&q=80&w=1200');
+  background-image: url('@/assets/bg_login.jpg');
   background-size: cover;
   background-position: center;
   display: none;
