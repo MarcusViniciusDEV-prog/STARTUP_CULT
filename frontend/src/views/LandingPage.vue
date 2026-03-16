@@ -4,7 +4,7 @@
     <nav class="navbar">
       <div class="container nav-content">
         <div class="logo">
-          <span class="logo-icon">🌿</span>
+          <span class="logo-icon"></span>
           <span class="logo-text">Cultura Viva</span>
         </div>
         <ul class="nav-links">

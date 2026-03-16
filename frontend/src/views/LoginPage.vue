@@ -5,7 +5,7 @@
       <div class="form-side">
         <div class="form-content">
           <div class="brand">
-             <span class="logo-icon">🌿</span>
+             <img class="logo_cult" src="@/assets/logo.png" alt="Cultura Viva" />
              <h2>Cultura Viva</h2>
           </div>
           
@@ -66,11 +66,13 @@ const router = useRouter();
 const email = ref('');
 const password = ref('');
 
-const handleLogin = () => {
-    // Simulating login
-    if (email.value && password.value) {
-        router.push('/dashboard');
-    }
+function handleLogin() {
+  if (email.value === 'marcos.moreira29@aluno.ce.gov.br' && password.value === '123456') {
+    alert('Login realizado com sucesso!')
+    router.push('/dashboard')
+  } else {
+    alert('E-mail ou senha incorretos.')
+  } 
 };
 </script>
 
@@ -116,7 +118,7 @@ const handleLogin = () => {
 }
 
 .brand h2 { font-weight: 800; }
-.logo-icon { font-size: 2rem; }
+.logo_cult { font-size: 2rem; }
 
 .welcome-text h3 {
   font-size: 1.8rem;

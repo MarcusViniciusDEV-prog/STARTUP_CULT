@@ -4,3 +4,7 @@
     <p>Conheça os melhores sabores da culinária local.</p>
   </div>
 </template>
+
+<script setup>
+import Sidebar from '@/components/Sidebar.vue';
+</script>

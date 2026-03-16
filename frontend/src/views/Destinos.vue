@@ -22,8 +22,9 @@
 
 <script setup>
 import { ref, computed } from 'vue'
-import SearchBar from '@/views/SearchBar.vue'
-import Card from '@/views/Card.vue'
+import SearchBar from '@/components/SearchBar.vue'
+import Card from '@/components/Card.vue'
+import Sidebar from '@/components/Sidebar.vue'
 
 // Lista de destinos
 const destinos = ref([

@@ -77,7 +77,8 @@
 
 <script setup>
 import { computed, toRef } from 'vue'
-import Card from '@/views/Card.vue'
+import Card from '@/components/Card.vue'
+import Sidebar from '@/components/Sidebar.vue'
 
 const props = defineProps({
   query: { type: String, default: '' },

@@ -4,3 +4,7 @@
     <p>Entre em contato conosco para dúvidas ou reservas.</p>
   </div>
 </template>
+
+<script setup>
+import Sidebar from '@/components/Sidebar.vue';
+</script>

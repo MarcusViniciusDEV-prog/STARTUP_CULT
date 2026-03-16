@@ -9,6 +9,7 @@ import MinhaConta from '@/views/MinhaConta.vue'
 import LoginPage from '@/views/LoginPage.vue'
 import LandingPage from '@/views/LandingPage.vue'
 import { commonjs } from 'globals'
+import { meta } from 'eslint-plugin-vue'
 
 const routes = [
   { path: '/', name: 'landingpage', component: LandingPage },
@@ -19,7 +20,6 @@ const routes = [
   { path: '/contato', name: 'contato', component: Contato },
   { path: '/minhaconta', name: 'minhaconta', component: MinhaConta },
   { path: '/loginpage', name: 'login', component: LoginPage },
-  { path: '/landingpage', name: 'landingpage', component: LandingPage },
 ]
 
 const router = createRouter({
