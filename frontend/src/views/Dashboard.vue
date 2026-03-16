@@ -77,7 +77,7 @@
 
 <script setup>
 import { computed, toRef } from 'vue'
-import Card from './Card.vue'
+import Card from '@/views/Card.vue'
 
 const props = defineProps({
   query: { type: String, default: '' },

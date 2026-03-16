@@ -46,8 +46,8 @@
 
 <script setup>
 import { ref, computed } from 'vue'
-import SearchBar from './SearchBar.vue'
-import Card from './Card.vue'
+import SearchBar from '@/views/SearchBar.vue'
+import Card from '@/views/Card.vue'
 
 // Lista de pousadas (dados simulados)
 const pousadas = ref([
